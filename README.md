@@ -18,4 +18,9 @@ gpgcheck= | 0
 
 The file is named errata.repo and located in the /etc/yum.repos.d/ directory.  The file contents look like this:
 ```
+[errata]
+name=Red Hat Updates
+baseurl=http://content.example.com/rhel9.0/x86_64/rhcsa-practice/errata
+enabled=1
+gpgcheck=0
 ```
