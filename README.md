@@ -92,7 +92,7 @@ Last metadata expiration check: 0:07:07 ago on Tue 09 Jan 2024 02:05:34 PM EST.
 Error: No matching Packages to list
 ```
 
-We have the exact version of the package located in the /home/student directory.  Let's go there and check the package out.
+We have the exact version of the package located in the /home/student directory.  Let's go there and check the package out.  We use -qi for query information.  The -i can also come after the package name. Note that rpm -i <package name> isused for installation via rpm and rpm -e <package name> is use for removing or erasing the package.
 ```
 # cd /home/student
 # pwd
@@ -119,6 +119,7 @@ Description :
 A RHCSA practice script.
 The package changes the motd.
 ```
+
 
 We can also use the rpm command to see if a package is installed.  Let's do that before we install this version.  We will use the packages "short name".
 ```
