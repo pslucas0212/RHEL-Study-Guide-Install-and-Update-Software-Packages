@@ -149,6 +149,10 @@ Let's use the rpm -q command to check the installation with the package short na
 # rpm -q rhcsa-script
 rhcsa-script-1.0.0-1.noarch
 ```
+Or with -qi... Note the Install Date information
+```
+...
+```
 
 And for fun let's use the dnf list command to check the installation
 ```
