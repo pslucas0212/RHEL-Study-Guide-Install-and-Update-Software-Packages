@@ -92,7 +92,7 @@ Last metadata expiration check: 0:07:07 ago on Tue 09 Jan 2024 02:05:34 PM EST.
 Error: No matching Packages to list
 ```
 
-We have the exact version of the package located in the /home/student directory.  Let's go there and check the package out.  We use -qi for query information.  The -i can also come after the package name. Note that rpm -i <package name> isused for installation via rpm and rpm -e <package name> is use for removing or erasing the package.
+We have the exact version of the package located in the /home/student directory.  Let's go there and check the package out.  We use -qi for query information.  The -i can also come after the package name. Note that rpm -i <package name> is used for installation via rpm and rpm -e <package name> is used for removing or erasing the package.  You can update an existing package with rpm -U <package name>.
 ```
 # cd /home/student
 # pwd
