@@ -92,7 +92,7 @@ Last metadata expiration check: 0:07:07 ago on Tue 09 Jan 2024 02:05:34 PM EST.
 Error: No matching Packages to list
 ```
 
-We have the exact version of the package located in the /home/student directory.  Let's go there and check the package out.  We use -qi for query information.  The -i can also come after the package name. Note that rpm -i <package name> is used for installation via rpm and rpm -e <package name> is used for removing or erasing the package.  You can update an existing package with rpm -U <package name>.
+We have the exact version of the package located in the /home/student directory.  Let's go there and check the package out.  We use -qi for query information add -p to query the package.  The -i can also come after the package name. Note that rpm -i <package name> is used for installation via rpm and rpm -e <package name> is used for removing or erasing the package.  You can update an existing package with rpm -U <package name>.
 ```
 # cd /home/student
 # pwd
@@ -149,9 +149,27 @@ Let's use the rpm -q command to check the installation with the package short na
 # rpm -q rhcsa-script
 rhcsa-script-1.0.0-1.noarch
 ```
-Or with -qi... Note the Install Date information
+Or with -qi for query information for an installed package. Note the Install Date information
 ```
-...
+# rpm -qi rhcsa-script
+Name        : rhcsa-script
+Version     : 1.0.0
+Release     : 1
+Architecture: noarch
+Install Date: Thu 22 Feb 2024 09:42:18 AM EST
+Group       : System
+Size        : 593
+License     : GPL
+Signature   : (none)
+Source RPM  : rhcsa-script-1.0.0-1.src.rpm
+Build Date  : Wed 23 Mar 2022 08:24:21 AM EDT
+Build Host  : localhost
+Packager    : Bernardo Gargallo
+URL         : http://example.com
+Summary     : RHCSA Practice Script
+Description :
+A RHCSA practice script.
+The package changes the motd.
 ```
 
 And for fun let's use the dnf list command to check the installation
